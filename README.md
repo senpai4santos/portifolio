@@ -4,7 +4,7 @@ Personal portfolio for **Jyang Santos**, junior software developer.
 Built with **HTML, CSS and vanilla JavaScript** — no build step, no dependencies.
 Glassmorphism dark theme, fully responsive.
 
-🌐 **Live:** https://senpai4santos.github.io/portfolio/
+🌐 **Live:** https://senpai4santos.github.io/portifolio/
 
 ## Local preview
 Just open `index.html` in your browser, or:
