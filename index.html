@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jyang Santos — Junior Software Developer portfolio. Web, Flutter, and full-stack projects." />
+  <meta name="author" content="Jyang Santos" />
+  <title>Jyang Santos · Junior Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Glass navigation -->
+  <header class="nav-wrap">
+    <nav class="glass nav">
+      <a href="#home" class="logo">
+        <span class="logo-mark">{JS}</span>
+        <span class="logo-text">Jyang<span class="dot">.</span>dev</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Hire me</a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow glass-pill">
+            <span class="status-dot"></span> Available for junior dev roles
+          </p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Jyang Santos</span>.<br />
+            I build <span class="typed" id="typed"></span><span class="cursor">|</span>
+          </h1>
+          <p class="hero-sub">
+            Junior software developer crafting web experiences with HTML, CSS, JavaScript, React, and mobile apps with Flutter. Currently building digital products for local businesses and public institutions.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              View projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-num">10+</span>
+              <span class="meta-label">Projects shipped</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-num">3</span>
+              <span class="meta-label">Live client works</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-num">2</span>
+              <span class="meta-label">Public-sector apps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code-style card -->
+        <div class="hero-card glass">
+          <div class="card-head">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="card-file">~/jyang/intro.js</span>
+          </div>
+          <pre class="code"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> <span class="c-op">=</span> {
+  <span class="c-prop">name</span>: <span class="c-str">"Jyang Santos"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Junior Software Developer"</span>,
+  <span class="c-prop">location</span>: <span class="c-str">"Salvaterra, Brazil"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>, <span class="c-str">"React"</span>, <span class="c-str">"Flutter"</span>],
+  <span class="c-prop">passion</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">coffee</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">shipIt</span>: () <span class="c-op">=></span> <span class="c-str">"let's go 🚀"</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <header class="section-head">
+        <span class="section-tag glass-pill">// 01 — About</span>
+        <h2 class="section-title">A bit about me</h2>
+      </header>
+      <div class="about-grid">
+        <div class="glass about-card">
+          <p>
+            I'm a junior developer based in <strong>Salvaterra</strong>, focused on turning ideas into clean, working software. My journey started with static sites for local restaurants and grew into full-stack web apps and mobile solutions for the <strong>Câmara Municipal de Salvaterra</strong> and a school-institution platform.
+          </p>
+          <p>
+            I love the moment a feature goes live and a real person uses it — whether that's a landing page that converts visitors, or a Flutter app that helps a public service run smoother.
+          </p>
+          <p>
+            Right now I'm deepening my skills in <strong>React</strong>, <strong>Node.js</strong> and <strong>Flutter</strong>, while shipping real client work on the side. Looking for a junior role where I can learn fast, contribute honestly, and grow with a strong team.
+          </p>
+        </div>
+        <aside class="glass about-side">
+          <h3>Quick facts</h3>
+          <ul class="facts">
+            <li><span>Role</span><strong>Junior Software Developer</strong></li>
+            <li><span>Focus</span><strong>Frontend · Flutter · Full-stack basics</strong></li>
+            <li><span>Based in</span><strong>Salvaterra, Brazil</strong></li>
+            <li><span>Languages</span><strong>Portuguese (native), English (working)</strong></li>
+            <li><span>Available for</span><strong>Remote · Hybrid · On-site</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <header class="section-head">
+        <span class="section-tag glass-pill">// 02 — Projects</span>
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-sub">A mix of client work, public-sector apps, and personal experiments.</p>
+      </header>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="glass project-card">
+          <div class="project-cover" style="--c1:#06b6d4;--c2:#7c3aed;">
+            <span class="cover-tag">Flutter · Mobile</span>
+            <span class="cover-icon">🏛️</span>
+          </div>
+          <div class="project-body">
+            <h3>Salvaterra City Council App</h3>
+            <p>Mobile app developed for the Câmara Municipal de Salvaterra. Built with Flutter to deliver a smooth cross-platform experience for citizens and public services.</p>
+            <ul class="tags">
+              <li>Flutter</li><li>Dart</li><li>Cross-platform</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Case study →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass project-card">
+          <div class="project-cover" style="--c1:#f43f5e;--c2:#f59e0b;">
+            <span class="cover-tag">Flutter · Mobile</span>
+            <span class="cover-icon">🎓</span>
+          </div>
+          <div class="project-body">
+            <h3>School Institutions App</h3>
+            <p>A Flutter app designed for school institutions — connecting students, parents, and administration in a single mobile experience.</p>
+            <ul class="tags">
+              <li>Flutter</li><li>UI/UX</li><li>Mobile</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Case study →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass project-card">
+          <div class="project-cover" style="--c1:#22c55e;--c2:#0ea5e9;">
+            <span class="cover-tag">Web · React</span>
+            <span class="cover-icon">🍽️</span>
+          </div>
+          <div class="project-body">
+            <h3>Cabana dos Parodianos</h3>
+            <p>Marketing site for a traditional Portuguese restaurant. Built with React + Vite, fast load times and a warm, food-first visual identity.</p>
+            <ul class="tags">
+              <li>React</li><li>Vite</li><li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Case study →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="glass project-card">
+          <div class="project-cover" style="--c1:#ef4444;--c2:#f59e0b;">
+            <span class="cover-tag">Web · Landing</span>
+            <span class="cover-icon">🥩</span>
+          </div>
+          <div class="project-body">
+            <h3>Grill Palace</h3>
+            <p>Brand-forward landing page for a grillhouse, with a video-first hero, menu section, and reservation CTA.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Case study →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="glass project-card">
+          <div class="project-cover" style="--c1:#8b5cf6;--c2:#ec4899;">
+            <span class="cover-tag">Web · Landing</span>
+            <span class="cover-icon">🚀</span>
+          </div>
+          <div class="project-body">
+            <h3>You Best Seller — Gumroad</h3>
+            <p>High-converting landing page for a digital product on Gumroad, designed to drive sales with a clean, focused layout.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>Landing page</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Case study →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="glass project-card">
+          <div class="project-cover" style="--c1:#0ea5e9;--c2:#10b981;">
+            <span class="cover-tag">Full-stack · CRUD</span>
+            <span class="cover-icon">🔐</span>
+          </div>
+          <div class="project-body">
+            <h3>MJJMagos</h3>
+            <p>Full login + CRUD system. HTML/CSS frontend with backend handling file creation, reading, updating and deletion, connected to the UI.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>CRUD</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/senpai4santos/MJJMagos" class="link-arrow" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <header class="section-head">
+        <span class="section-tag glass-pill">// 03 — Skills</span>
+        <h2 class="section-title">What I work with</h2>
+      </header>
+
+      <div class="skills-grid">
+        <div class="glass skill-card">
+          <h3>Frontend</h3>
+          <ul class="skill-list">
+            <li><span class="dot-skill"></span>HTML5 &amp; Semantic markup</li>
+            <li><span class="dot-skill"></span>CSS3 · Flexbox · Grid</li>
+            <li><span class="dot-skill"></span>JavaScript (ES6+)</li>
+            <li><span class="dot-skill"></span>React (basics)</li>
+            <li><span class="dot-skill"></span>Vite</li>
+          </ul>
+        </div>
+        <div class="glass skill-card">
+          <h3>Mobile</h3>
+          <ul class="skill-list">
+            <li><span class="dot-skill"></span>Flutter</li>
+            <li><span class="dot-skill"></span>Dart</li>
+            <li><span class="dot-skill"></span>Cross-platform builds (iOS &amp; Android)</li>
+            <li><span class="dot-skill"></span>Material design basics</li>
+          </ul>
+        </div>
+        <div class="glass skill-card">
+          <h3>Backend &amp; Tools</h3>
+          <ul class="skill-list">
+            <li><span class="dot-skill"></span>CRUD fundamentals</li>
+            <li><span class="dot-skill"></span>Git &amp; GitHub</li>
+            <li><span class="dot-skill"></span>VS Code</li>
+            <li><span class="dot-skill"></span>npm basics</li>
+            <li><span class="dot-skill"></span>File-system I/O (Node)</li>
+          </ul>
+        </div>
+        <div class="glass skill-card">
+          <h3>Currently learning</h3>
+          <ul class="skill-list">
+            <li><span class="dot-skill"></span>TypeScript</li>
+            <li><span class="dot-skill"></span>React deeper patterns</li>
+            <li><span class="dot-skill"></span>Node.js &amp; APIs</li>
+            <li><span class="dot-skill"></span>SQL basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <header class="section-head">
+        <span class="section-tag glass-pill">// 04 — Contact</span>
+        <h2 class="section-title">Let's build something</h2>
+        <p class="section-sub">Open to junior developer roles, freelance work, and collaborations.</p>
+      </header>
+
+      <div class="contact-wrap">
+        <div class="glass contact-card">
+          <a class="contact-item" href="mailto:contact.jyangsantos@gmail.com">
+            <span class="ci-icon">✉️</span>
+            <div>
+              <span class="ci-label">Email</span>
+              <strong>contact.jyangsantos@gmail.com</strong>
+            </div>
+          </a>
+          <a class="contact-item" href="https://github.com/senpai4santos" target="_blank" rel="noopener">
+            <span class="ci-icon">🐙</span>
+            <div>
+              <span class="ci-label">GitHub</span>
+              <strong>github.com/senpai4santos</strong>
+            </div>
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/senpai4santos" target="_blank" rel="noopener">
+            <span class="ci-icon">💼</span>
+            <div>
+              <span class="ci-label">LinkedIn</span>
+              <strong>linkedin.com/in/senpai4santos</strong>
+            </div>
+          </a>
+          <a class="contact-item" href="#">
+            <span class="ci-icon">📍</span>
+            <div>
+              <span class="ci-label">Location</span>
+              <strong>Salvaterra, Brazil · open to remote</strong>
+            </div>
+          </a>
+        </div>
+
+        <form class="glass contact-form" id="contactForm" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID" method="POST">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@email.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Tell me about your project or role..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message →</button>
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner glass">
+      <span>© <span id="year"></span> Jyang Santos · Built with HTML, CSS &amp; a lot of ☕</span>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
