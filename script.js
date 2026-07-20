@@ -70,10 +70,18 @@ if (form) {
     const submitBtn = form.querySelector('button[type="submit"]');
     const original = submitBtn.textContent;
 
-    // If the form is still using the placeholder endpoint, fall back to a friendly note
+    // If Formspree isn't configured yet, fall back to opening the user's mail client
+    // (mailto: with pre-filled subject + body). Always works, no signup required.
     if (form.action.includes('REPLACE_WITH_YOUR_FORMSPREE_ID')) {
-      fb.style.color = '#fbbf24';
-      fb.textContent = '⚠️ Form not yet wired to Formspree. See README to finish setup in 1 minute.';
+      const data = new FormData(form);
+      const name = (data.get('name') || '').toString().trim();
+      const email = (data.get('email') || '').toString().trim();
+      const message = (data.get('message') || '').toString().trim();
+      const subject = encodeURIComponent(`Portfolio contact from ${name || 'someone'}`);
+      const body = encodeURIComponent(`From: ${name} <${email}>\n\n${message}`);
+      window.location.href = `mailto:contact.jyangsantos@gmail.com?subject=${subject}&body=${body}`;
+      fb.style.color = '#86efac';
+      fb.textContent = '✅ Opening your email client...';
       return;
     }
 

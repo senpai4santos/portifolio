@@ -22,7 +22,15 @@ portfolio/
 └── README.md
 ```
 
-## Wire up the contact form (Formspree — free, 50 msgs/month)
+## Wire up the contact form
+
+**Already working out of the box:** if you don't configure anything, the form
+opens the visitor's email client pre-filled with their message — no signup,
+no monthly limits, works everywhere.
+
+**For a more polished experience** (submissions land directly in your inbox
+without opening an email client), wire up Formspree (free tier = 50 msgs/month):
+
 1. Go to https://formspree.io and sign up (free tier is plenty).
 2. Create a new form, set the recipient to `contact.jyangsantos@gmail.com`.
 3. Copy the form endpoint — it looks like `https://formspree.io/f/xyzabc123`.
@@ -33,8 +41,8 @@ portfolio/
 5. Deploy. Done — submissions land directly in your inbox.
 
 ## Deployment
-- **GitHub Pages:** already configured via the `gh-pages` branch. Push to main → GitHub Actions publishes automatically (see `.github/workflows/pages.yml` if you add it later).
-- **Netlify Drop:** drag the `portfolio/` folder onto https://app.netlify.com/drop for an instant URL.
+- **Netlify (primary):** drag the `portfolio/` folder onto https://app.netlify.com/drop for an instant URL.
+- **GitHub:** the repo at https://github.com/senpai4santos/portifolio is the source of truth. Push to `master` and Netlify re-deploys automatically (if you connect the repo to Netlify).
 
 ## Before going live (personalize)
 - [ ] Replace `contact.jyangsantos@gmail.com` with your real email in `index.html`.
